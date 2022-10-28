@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> A Quiz About Barcelona</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+
+<body>
+
+  <div class="container">
+   <div class="row">
+      <div class="col-md-6  mx-auto w-90">
+
+    <div class="mt-4 mb-4">
+      <h1> A Quiz on Barcelona </h1>
+    </div>
+
+      <div class="mb-3">
+      <p> This quiz will cover the basics of Barcelona, a beautiful city with centuries of history. All information is taken from <a href=https://en.wikipedia.org/wiki/Barcelona> this webpage. </a> </p>
+    </div>
+
+      <form id=questions method="get" action=””>
+
+    <div class="mb-3">
+        <label for="countryLocation" class="form-label">Which country is Barcelona located in?</label>
+        <input type="text" name="countryLocation" id="countryLocation" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="soccerTeam" class="form-label">What is the name of the city’s soccer team?</label> <input type="text" name="soccerTeam" id="soccerTeam" class="form-control">
+      </div>
+
+    <div class="mb-3">
+        <label for="districtNames" class="form-label">List three of the 10 administrative districts:</label> <textarea id="districtNames" name="districtNames" class="form-control"></textarea>
+      </div>
+
+    <div class="mb-3">
+          <label class="form-label">In what year did the city host the Summer Olympics?</label>
+
+        <div class="form-check">
+          <label class="form-check-label" for="1984"><input class="form-check-input" type="radio" name="year" value="1984" id="1984">1984</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="1992"><input class="form-check-input" type="radio" name="year" value="1992" id="1992">1992</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="1998"><input class="form-check-input" type="radio" name="year" value="1998" id="1998">1998</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="2002"><input class="form-check-input" type="radio" name="year" value="2002" id="2002">2002</label>
+        </div>
+    </div>
+
+      <div class="mb-3">
+          <label class="form-label">Which of the following might a tourist in Barcelona do? (select multiple)</label>
+
+        <div class="form-check">
+          <label class="form-check-label" for="music"><input class="form-check-input" type="checkbox" name="activity" value="music" id="music">Listen to live music </label>
+          </div>
+
+          <div class="form-check">
+          <label class="form-check-label" for="plaza"><input class="form-check-input" type="checkbox" name="activity" value="plaza" id="plaza">Explore plazas</label>
+          </div>
+
+          <div class="form-check">
+          <label class="form-check-label" for="ski"><input class="form-check-input" type="checkbox" name="activity" value="ski" id="ski">Go skiing and snowboarding</label>
+          </div>
+
+          <div class="form-check">
+          <label class="form-check-label" for="beach"><input class="form-check-input" type="checkbox" name="activity" value="beach" id="beach">Visit the beach</label>
+          </div>
+
+          <div class="form-check">
+          <label class="form-check-label" for="hotel"><input class="form-check-input" type="checkbox" name="activity" value="hotel" id="hotel">Stay in their hotel all day</label>
+          </div>
+
+          <div class="form-check">
+          <label class="form-check-label" for="game"><input class="form-check-input" type="checkbox" name="activity" value="game" id="game">Watch a soccer game in the stadium</label>
+          </div>
+      </div>
+
+      <div class="mb-3">
+      <label class="form-label">Which of the following attractions is not found in Barcelona?</label>
+        <select class="form-select" name="touristAttractions" id="touristAttractions">
+          <option value="default">Select One</option>
+          <option value="sagrada">La Sagrada Familia</option>
+		      <option value="stadium">Camp Nou</option>
+          <option value="tower">The Eiffel Tower</option>
+          <option value="park">Park Guell</option>
+          <option value="museum">The Pablo Picasso Museum</option>
+		      <option value="shopping">La Rambla</option>
+        </select>
+      </div>
+
+      <div class="mt-4 mb-4">
+        <button type="button" class="btn btn-outline-primary">Submit</button>
+        <button type="button" class="btn btn-outline-secondary">Reset Selections</button>
+      </div>
+
+      </form>
+
+   </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
